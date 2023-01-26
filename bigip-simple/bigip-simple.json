@@ -1,26 +1,17 @@
-{
-   "policy" : {
-      "applicationLanguage" : "utf-8",
-      "caseInsensitive" : false,
-      "description" : "Fundamental Policy",
-      "enablePassiveMode" : false,
-      "enforcementMode" : "blocking",
-      "fullPath" : "/Common/bigip_simple",
-      "general" : {
-         "trustXff" : true
-      },
-      "name" : "bigip_simple",
-      "policy-builder" : {
-         "learningMode" : "disabled"
-      },
-      "protocolIndependent" : false,
-      "signature-settings" : {
-         "signatureStaging" : false
-      },
-      "softwareVersion" : "16.1.3",
-      "template" : {
-         "name" : "POLICY_TEMPLATE_FUNDAMENTAL"
-      },
-      "type" : "security"
-   }
+{ 
+    "policy": {
+        "name": "bigip_simple",
+        "description": "TemplateForWAF",
+        "template": {
+            "name": "POLICY_TEMPLATE_RAPID_DEPLOYMENT"
+        },
+        "enforcementMode": "blocking",
+        "signature-settings": {
+            "signatureStaging": false
+        },
+        "policy-builder": {
+            "learnOnlyFromNonBotTraffic": false
+        }
+    },
+    "modifications": [  ]
 }
