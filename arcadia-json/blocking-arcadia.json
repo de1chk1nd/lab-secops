@@ -2,7 +2,7 @@
     "apiVersion": "appprotect.f5.com/v1beta1",
     "kind": "APPolicy",
     "metadata": {
-        "name": "blocking-simple-web-nginx",
+        "name": "blocking-arcadia",
         "namespace": "secops"
     },
     "spec": {
