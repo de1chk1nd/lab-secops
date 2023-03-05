@@ -2,5 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: secops
+  annotations:
+    argocd.argoproj.io/managed-by: workshop-prod    
   labels:
     name: secops
