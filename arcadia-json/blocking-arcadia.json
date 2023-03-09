@@ -7,7 +7,7 @@
     },
     "spec": {
         "policy": {
-            "name": "blocking_simple",
+            "name": "blocking-arcadia",
             "template": {
                 "name": "POLICY_TEMPLATE_NGINX_BASE"
             },
